@@ -1,0 +1,61 @@
+
+.settings {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  color: black;
+  left: 0;
+  top: 0;
+
+ &-titlebar,
+ &-infobar {
+     color: black;
+    background-color: var(--silver);
+  }
+
+  &-titlebar { padding: 15px 0; }
+  &-resetbar { 
+    cursor: pointer;
+    padding: 10px 0;}
+
+  &-icon {
+    cursor: pointer;
+    z-index: 98;
+    width: 8vw;
+    margin: 10px 15px;
+    position: absolute;
+    right: 0;
+    top: 0; }
+
+  .back { left: 0; }
+
+  &-heading {
+    color: black;
+    background-color: var(--silver); }
+
+  &-placeholder { border-bottom: 1px solid var(--silver); }
+
+  &-text {
+    color: gray;
+    padding: 10px 20px 10px 10px;
+    background-color: var(--silver); }
+
+  &-info {
+    padding: 0 10px;
+    &--heading:before {
+      content: 'The Weather App';
+      color: gray; }
+    &--version:before {
+      content: 'version 1.1.0';
+      font-size: 3vw;
+      color: gray; }
+    &--dev:before { 
+      content: 'Dev.: Arnold Haban';
+      color: gray; }
+  }
+}
+
+.qrcode {
+  width: 50vw;
+  padding: 20px;
+  margin-top: 20px;}

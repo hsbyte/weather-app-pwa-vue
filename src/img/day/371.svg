@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="64"
+   height="64"
+   viewBox="0 0 16 16"
+   version="1.1"
+   id="svg21"
+   sodipodi:docname="371.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata31">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="826"
+     inkscape:window-height="442"
+     id="namedview29"
+     showgrid="false"
+     inkscape:zoom="3.6875"
+     inkscape:cx="32.89199"
+     inkscape:cy="32"
+     inkscape:window-x="498"
+     inkscape:window-y="57"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g29" />
+  <defs
+     id="defs4">
+    <style
+       type="text/css"
+       id="style2"><![CDATA[
+@keyframes weather-sun {
+  0% {
+    -webkit-transform: rotate(0deg);
+       -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);}
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);}
+}
+.weather-sun {
+  -webkit-transform-origin: 50% 50%;
+     -moz-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-animation-name: weather-sun;
+     -moz-animation-name: weather-sun;
+      -ms-animation-name: weather-sun;
+          animation-name: weather-sun;
+  -webkit-animation-duration: 9s;
+     -moz-animation-duration: 9s;
+      -ms-animation-duration: 9s;
+          animation-duration: 9s;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;}
+
+@-webkit-keyframes fill-opacity {
+  0% {stroke-opacity: 0;}
+  50% {stroke-opacity: 1;}
+  100% {stroke-opacity: 0;}
+}
+@-webkit-keyframes snowFall {
+  0% {
+    -webkit-transform: translateY(0px) translateX(0px);
+            transform: translateY(0px) translateX(0px);
+  }
+  2% {
+    -webkit-transform: translateY(0.35px) translateX(0.75349px);
+            transform: translateY(0.35px) translateX(0.75349px);
+  }
+  4% {
+    -webkit-transform: translateY(0.7px) translateX(1.44133px);
+            transform: translateY(0.7px) translateX(1.44133px);
+  }
+  6% {
+    -webkit-transform: translateY(1.05px) translateX(2.06119px);
+            transform: translateY(1.05px) translateX(2.06119px);
+  }
+  8% {
+    -webkit-transform: translateY(1.4px) translateX(2.61124px);
+            transform: translateY(1.4px) translateX(2.61124px);
+  }
+  10% {
+    -webkit-transform: translateY(1.75px) translateX(3.09017px);
+            transform: translateY(1.75px) translateX(3.09017px);
+  }
+  12% {
+    -webkit-transform: translateY(2.1px) translateX(3.49718px);
+            transform: translateY(2.1px) translateX(3.49718px);
+  }
+  14% {
+    -webkit-transform: translateY(2.45px) translateX(3.83201px);
+            transform: translateY(2.45px) translateX(3.83201px);
+  }
+  16% {
+    -webkit-transform: translateY(2.8px) translateX(4.09491px);
+            transform: translateY(2.8px) translateX(4.09491px);
+  }
+  18% {
+    -webkit-transform: translateY(3.15px) translateX(4.28661px);
+            transform: translateY(3.15px) translateX(4.28661px);
+  }
+  20% {
+    -webkit-transform: translateY(3.5px) translateX(4.40839px);
+            transform: translateY(3.5px) translateX(4.40839px);
+  }
+  22% {
+    -webkit-transform: translateY(3.85px) translateX(4.46197px);
+            transform: translateY(3.85px) translateX(4.46197px);
+  }
+  24% {
+    -webkit-transform: translateY(4.2px) translateX(4.44956px);
+            transform: translateY(4.2px) translateX(4.44956px);
+  }
+  26% {
+    -webkit-transform: translateY(4.55px) translateX(4.37381px);
+            transform: translateY(4.55px) translateX(4.37381px);
+  }
+  28% {
+    -webkit-transform: translateY(4.9px) translateX(4.23782px);
+            transform: translateY(4.9px) translateX(4.23782px);
+  }
+  30% {
+    -webkit-transform: translateY(5.25px) translateX(4.04508px);
+            transform: translateY(5.25px) translateX(4.04508px);
+  }
+  32% {
+    -webkit-transform: translateY(5.6px) translateX(3.79948px);
+            transform: translateY(5.6px) translateX(3.79948px);
+  }
+  34% {
+    -webkit-transform: translateY(5.95px) translateX(3.50523px);
+            transform: translateY(5.95px) translateX(3.50523px);
+  }
+  36% {
+    -webkit-transform: translateY(6.3px) translateX(3.16689px);
+            transform: translateY(6.3px) translateX(3.16689px);
+  }
+  38% {
+    -webkit-transform: translateY(6.65px) translateX(2.78933px);
+            transform: translateY(6.65px) translateX(2.78933px);
+  }
+  40% {
+    -webkit-transform: translateY(7px) translateX(2.37764px);
+            transform: translateY(7px) translateX(2.37764px);
+  }
+  42% {
+    -webkit-transform: translateY(7.35px) translateX(1.93717px);
+            transform: translateY(7.35px) translateX(1.93717px);
+  }
+  44% {
+    -webkit-transform: translateY(7.7px) translateX(1.47343px);
+            transform: translateY(7.7px) translateX(1.47343px);
+  }
+  46% {
+    -webkit-transform: translateY(8.05px) translateX(0.99211px);
+            transform: translateY(8.05px) translateX(0.99211px);
+  }
+  48% {
+    -webkit-transform: translateY(8.4px) translateX(0.49901px);
+            transform: translateY(8.4px) translateX(0.49901px);
+  }
+  50% {
+    -webkit-transform: translateY(8.75px) translateX(0px);
+            transform: translateY(8.75px) translateX(0px);
+  }
+  52% {
+    -webkit-transform: translateY(9.1px) translateX(-0.49901px);
+            transform: translateY(9.1px) translateX(-0.49901px);
+  }
+  58% {
+    -webkit-transform: translateY(10.15px) translateX(-1.93717px);
+            transform: translateY(10.15px) translateX(-1.93717px);
+  }
+  100% {
+    -webkit-transform: translateY(10.5px) translateX(-2.37764px);
+            transform: translateY(10.5px) translateX(-2.37764px);
+  }
+}
+.snow-alt:first-child {
+  fill-opacity: 0;
+  -webkit-animation-name: snowFall, fill-opacity;
+          animation-name: snowFall, fill-opacity;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;}
+.snow-alt:last-child {
+  fill-opacity: 0;
+  -webkit-animation-name: snowFall, fill-opacity;
+          animation-name: snowFall, fill-opacity;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;}
+    ]]></style>
+  </defs>
+  <g
+     transform="translate(-2.4152542,-1.5762712)"
+     id="g22">
+    <g
+       class="weather-sun"
+       id="g18">
+      <circle
+         r="2.3678091"
+         cy="8"
+         cx="8"
+         style="fill:#fff100;fill-rule:evenodd;stroke:#ffb100;stroke-width:0.79374999"
+         id="circle4" />
+      <path
+         d="M 4.0904705,6.3871224 5.1355132,6.8335173"
+         id="k"
+         style="fill:#fff100;stroke:#ffb100;stroke-width:0.68183124"
+         inkscape:connector-curvature="0" />
+      <use
+         y="0"
+         x="0"
+         id="a"
+         transform="rotate(-30,8.1820927,7.9703204)"
+         width="100%"
+         height="100%"
+         xlink:href="#b" />
+      <use
+         xlink:href="#k"
+         height="100%"
+         width="100%"
+         transform="rotate(-30,8.0016816,7.8721507)"
+         id="j"
+         style="fill:#fff100;stroke:#ffb100"
+         x="0"
+         y="0" />
+      <use
+         xlink:href="#j"
+         height="100%"
+         width="100%"
+         transform="rotate(-30,8.0328185,7.9973806)"
+         id="i"
+         style="fill:#fff100;stroke:#ffb100"
+         x="0"
+         y="0" />
+      <use
+         xlink:href="#i"
+         height="100%"
+         width="100%"
+         transform="rotate(-30,7.997136,7.9355612)"
+         id="h"
+         style="fill:#fff100;stroke:#ffb100"
+         x="0"
+         y="0" />
+      <use
+         xlink:href="#h"
+         height="100%"
+         width="100%"
+         transform="rotate(-30,7.9348621,7.9355612)"
+         id="g"
+         style="fill:#fff100;stroke:#ffb100"
+         x="0"
+         y="0" />
+      <use
+         xlink:href="#g"
+         height="100%"
+         width="100%"
+         transform="rotate(-30,8.0603193,7.9044243)"
+         id="f"
+         style="fill:#fff100;stroke:#ffb100"
+         x="0"
+         y="0" />
+      <use
+         xlink:href="#f"
+         height="100%"
+         width="100%"
+         transform="rotate(-30,7.9982726,7.940334)"
+         id="e"
+         style="fill:#fff100;stroke:#ffb100"
+         x="0"
+         y="0" />
+      <use
+         xlink:href="#e"
+         height="100%"
+         width="100%"
+         transform="rotate(-30,7.9982727,8.0023807)"
+         id="d"
+         style="fill:#fff100;stroke:#ffb100"
+         x="0"
+         y="0" />
+      <use
+         xlink:href="#d"
+         height="100%"
+         width="100%"
+         transform="rotate(-30,7.967363,7.8771508)"
+         id="c"
+         style="fill:#fff100;stroke:#ffb100"
+         x="0"
+         y="0" />
+      <use
+         xlink:href="#c"
+         height="100%"
+         width="100%"
+         transform="rotate(-30,8.0030454,7.9389702)"
+         id="b"
+         style="fill:#fff100;stroke:#ffb100"
+         x="0"
+         y="0" />
+      <use
+         id="use19"
+         xlink:href="#a"
+         height="100%"
+         width="100%"
+         transform="rotate(-30,7.8228616,8.0014573)"
+         style="fill:#fff100;stroke:#ffb100"
+         x="0"
+         y="0" />
+    </g>
+  </g>
+  <path
+     d="M 3.7429581,11.523976 8.8577601,11.497814 12.090458,11.481279 C 14.253083,10.455103 13.734833,7.832029 12.154505,7.702529 12.054093,4.2400289 8.6895051,3.1952784 6.5397561,6.4002289 4.8564056,6.1607659 3.9532556,6.8460789 3.8070056,8.428378 1.5611556,8.871353 2.5656556,11.043226 3.7429581,11.523976 Z"
+     style="fill:#e6e7e8;stroke:#929497;stroke-width:0.75;stroke-opacity:1;fill-opacity:1"
+     id="path26" />
+  <g
+     id="g29"
+     transform="rotate(-0.18690352,-151.10981,805.08142)">
+    <path
+       style="fill:#d1d2d3;fill-opacity:1;stroke-width:0.25"
+       d="M 8.7246159,7.8406325 C 8.586734,7.8517725 8.483922,7.9725915 8.4953883,8.1097968 l 0.065265,0.8143523 -0.7379063,-0.35069 c -0.1246402,-0.05923 -0.2737652,-0.0064 -0.3331077,0.118487 -0.059343,0.124866 -0.00615,0.273872 0.1184873,0.3331073 l 0.7379062,0.35069 -0.6726411,0.4636623 c -0.1136144,0.07831 -0.1424832,0.2339933 -0.063944,0.3477153 0.078539,0.113722 0.2341005,0.142257 0.3477149,0.06394 L 8.6298037,9.7873987 8.6950677,10.60175 c 0.010918,0.137775 0.1315077,0.24048 0.2691639,0.229228 0.092441,-0.0076 0.1688074,-0.06399 0.2059367,-0.142111 0.018243,-0.03839 0.026991,-0.08184 0.023291,-0.127053 L 9.1281943,9.7474617 9.8661005,10.098152 c 0.1246402,0.05924 0.2737655,0.0064 0.3331075,-0.1184873 0.05934,-0.124866 0.0061,-0.273873 -0.118487,-0.333108 L 9.3428152,9.2958704 10.015457,8.8322081 c 0.0374,-0.02568 0.06556,-0.05991 0.0838,-0.09829 0.03713,-0.07813 0.03277,-0.173202 -0.01986,-0.2494213 -0.07854,-0.113725 -0.2341012,-0.142261 -0.3477156,-0.06395 L 9.0590448,8.8842121 8.9937798,8.0698598 C 8.9827539,7.9323115 8.8623905,7.8297145 8.7246159,7.8406325 Z"
+       class="snow-alt"
+       id="path21"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#d1d2d3;fill-opacity:1;stroke-width:0.25"
+       d="m 13.303561,10.605 c 0.107696,-0.08682 0.124678,-0.244545 0.03798,-0.3515 l -0.512295,-0.6363823 0.80731,-0.1254543 c 0.136363,-0.02119 0.229875,-0.148813 0.208646,-0.285424 -0.02123,-0.136609 -0.14906,-0.2298363 -0.285423,-0.2086453 l -0.807311,0.1254553 0.295015,-0.7618366 c 0.04983,-0.128678 -0.01393,-0.273606 -0.142854,-0.3234 -0.128925,-0.049793 -0.273567,0.01418 -0.323399,0.142854 L 12.286211,8.9425031 11.773915,8.3061218 c -0.08657,-0.107735 -0.244051,-0.124755 -0.3515,-0.03798 -0.07216,0.05827 -0.103517,0.147899 -0.09023,0.2333733 0.0065,0.042 0.02375,0.08283 0.05226,0.118127 l 0.512295,0.6363813 -0.80731,0.125455 c -0.136364,0.02119 -0.229876,0.1488133 -0.208647,0.2854223 0.02123,0.136611 0.149061,0.229837 0.285424,0.208647 l 0.807305,-0.125455 -0.295015,0.7618363 c -0.01645,0.04228 -0.02047,0.08642 -0.01395,0.128415 0.01328,0.08547 0.0704,0.161606 0.1568,0.194985 0.128925,0.04979 0.273568,-0.01418 0.3234,-0.142854 l 0.295015,-0.7618363 0.512295,0.6363823 c 0.08653,0.107487 0.243766,0.124545 0.3515,0.03798 z"
+       class="snow-alt"
+       id="path23"
+       inkscape:connector-curvature="0"
+       inkscape:transform-center-x="0.0072281775"
+       inkscape:transform-center-y="-1.3710834" />
+  </g>
+</svg>

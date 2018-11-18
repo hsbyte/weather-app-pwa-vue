@@ -1,0 +1,77 @@
+/*
+  Author: Arnold Haban
+  Version: 1.0.0
+*/
+
+.container,
+.center { margin: 0 auto; }
+.center { 
+  align-self: center;
+  text-align: center; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap; }
+
+@mixin col-shared() {
+  flex-basis: 0;
+  flex-grow: 1;
+  width: 100%;
+
+  &-auto {
+    flex-grow: 1;
+    flex-basis: auto; }
+
+  &-1 { width: 8.33%; }
+
+  &-2 { width: 16.66%; }
+    
+  &-3 { width: 25%; }
+
+  &-4 { width: 33.33%; }
+    
+  &-5 { width: 41.66%; }
+
+  &-6 { flex-basis: 50%; }
+
+  &-7 { flex-basis: 58.33%; }
+
+  &-8 { flex-basis: 66.66%; }
+
+  &-9 { flex-basis: 75%; }
+
+  &-10 { flex-basis: 83.33%; }
+
+  &-11 { flex-basis: 91.66%; }
+
+  &-12 { flex-basis: 100%; }
+}
+
+/* Extra small devices */
+@media only screen and (max-width: 543px) {
+  .col-xs { @include col-shared(); }
+}
+
+/* Small devices */
+@media only screen and (min-width: 544px) and (max-width: 767px) {
+  .container { max-width: 540px; }
+  .col-s { @include col-shared(); }
+}
+
+/* Medium devices: navbar toggle breakpoint */
+@media only screen and (min-width: 768px) and (max-width: 991px)  {
+  .container { max-width: 720px; }
+  .col-m { @include col-shared(); }
+}
+
+/* Large devices */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .container { max-width: 960px; }
+  .col-l { @include col-shared(); }
+}
+
+/* Extra large devices */
+@media only screen and (min-width: 1200px) {
+  .container { max-width: 1140px; }
+  .col-xl { @include col-shared(); }
+}

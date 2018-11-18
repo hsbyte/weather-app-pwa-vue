@@ -1,0 +1,122 @@
+
+.main { height: 100%; }
+
+.temp-unit {
+  font-weight: normal;
+  font-size: 6vw; }
+
+.splash {
+  z-index: 0;
+  overflow-x: hidden;
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--half-baked);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    padding: 0 10px;
+    &--app:before {
+      content: 'The Weather App';
+      color: yellow; }
+    &--dev:before { content: 'ARNOLD HABAN' }
+  }
+}
+
+.group { border-bottom: 1px solid var(--silver); }
+
+.aside {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 20ms;
+  overflow: hidden;
+  background: linear-gradient(130deg, var(--cerise), var(--curious-blue));
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  &.aside--active {
+    z-index: 100;
+    opacity: 1; }
+
+  &__content {
+    overflow-y: auto;
+    height: 100%;
+    width: 105%;
+    box-sizing: content-box;
+
+    &--placeholder {
+      cursor: pointer;
+      color: white;
+      margin: 0 20px; }
+      
+  }
+}
+
+.error {
+  color: red;
+  padding: 10px 0;
+  background-color: white; }
+
+.focus {
+  h4 { color: black; }
+  background-color: var(--primrose); }
+
+.add {
+  position: absolute;
+  width: 100%;
+  margin-left: 0;
+  bottom: -45px;
+  transition-timing-function: ease-in;
+  transition: bottom 1s;
+
+  &.add--active { bottom: 10vh; }
+
+  &__bar {
+    background-color: #ade6e6;
+    padding: 20px 0;
+    margin-left: 0;
+    width: 100%;
+
+    & input {
+      width: 100%;
+      border: none;
+      font-size: 4.2vw;
+      font-weight: lighter;
+      background-color: transparent;
+      text-align: center; }
+  }
+}
+
+.btn-add {
+  cursor: pointer;
+  color: black;
+  background-color: var(--silver);
+  position: fixed;
+  width: 80%;
+  height: 9.5vh;
+  left: 0;
+  bottom: 0; }
+
+
+.weather-icon { width: 50vw; }
+
+.forecast {
+  margin-top: 7vh;
+  padding: 0 10px;
+
+  &__box {
+    margin: 5px auto;
+    padding: 10px;
+    background-color: rgba(255,255,255,.2);
+    width: 95%;
+  }
+}
+

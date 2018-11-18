@@ -1,0 +1,31 @@
+{
+	"name": "Weather PWA Vue",
+	"short_name": "The Weather App",
+	"start_url": ".",
+	"display": "standalone",
+	"orientation": "portrait",
+	"background_color": "#ccc",
+	"theme_color": "",
+	"icons": [
+		{
+			"src": "app-icon-96x96.png",
+			"size": "96x96",
+			"type": "image/png"
+		},
+		{
+			"src": "app-icon-144x144.png",
+			"size": "144x144",
+			"type": "image/png"
+		},
+		{
+			"src": "app-icon-256x256.png",
+			"size": "256x256",
+			"type": "image/png"
+		},
+		{
+			"src": "app-icon-512x512.png",
+			"size": "512x512",
+			"type": "image/png"
+		}
+	]
+}

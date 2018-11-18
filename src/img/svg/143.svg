@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="64" height="64" viewBox="0 0 16 16" version="1.1" id="svg21" sodipodi:docname="143.svg" inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <defs>
+    <style type="text/css"><![CDATA[
+@keyframes weather-mist {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);}
+  25% {
+    -webkit-transform: translateX(1px);
+            transform: translateX(1px);}
+  75% {
+    -webkit-transform: translateX(-1px);
+            transform: translateX(-1px);}
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);}
+}
+.weather-mist {
+  -webkit-animation-name: weather-mist;
+     -moz-animation-name: weather-mist;
+      -ms-animation-name: weather-mist;
+          animation-name: weather-mist;
+  -webkit-animation-duration: 9s;
+     -moz-animation-duration: 9s;
+      -ms-animation-duration: 9s;
+          animation-duration: 9s;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+    ]]></style>
+  </defs>
+  <path d="M 3.7429581,11.523976 8.8577601,11.497814 12.090458,11.481279 C 14.253083,10.455103 13.734833,7.832029 12.154505,7.702529 12.054093,4.2400289 8.6895051,3.1952784 6.5397561,6.4002289 4.8564056,6.1607659 3.9532556,6.8460789 3.8070056,8.428378 1.5611556,8.871353 2.5656556,11.043226 3.7429581,11.523976 Z" style="fill:white;stroke:#d1d2d3;stroke-width:0.75" />
+  <path class="weather-mist" style="fill:none;stroke:#d1d2d3;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="M 3.7288135,13.788135 12.40678,13.720339" />
+</svg>

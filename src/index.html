@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125991990-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125991990-1');
+</script>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!-- <meta http-equiv="Cache-Control: must-revalidate, public, max-age=86400" content="public"> -->
+  <meta name="Author" content="Arnold Haban">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Weather App</title>
+  <link rel="stylesheet" href="./styles.min.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<div class="backdrop"></div>
+
+	<div class="container">
+		<svg class="slider">
+	  	<path id="slider" class="slider--svg" d="M0,0 0,0 c0,0 0,0 0,0 L0,0" fill="rgb(220,220,220)" opacity=.2 />
+		</svg>
+
+		<div class="main">
+			
+			<div id="main">
+
+				<div class="splash" v-if="!active" style="z-index: 0;">
+					<div class="splash__content" v-if="wait">
+						<h2 class="splash__content--app"></h2>
+						<p class="splash__content--dev"></p>
+					</div>
+					<div class="loader"></div>
+				</div>
+
+				<div v-if="active">
+
+					<div class="row">
+						<div class="col-auto center">
+							<img class="weather-icon" v-bind:src="'./img/' + current.condition.icon" alt="">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-auto center">
+							<h2>{{ name }}</h2>
+							<h4>{{ location.country }}</h4>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-auto center">
+							<h5>{{ current.condition.text }}</h5>
+							<div v-if="celsius"><h1>{{ current.temp_c }}<sup class="temp-unit">°C</sup></h1></div>
+							<div v-else><h1>{{ current.temp_f }}<sup class="temp-unit">°F</sup></h1></div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-auto center">
+							<h3>{{ location.localtime }}</h3>
+						</div>
+					</div>
+
+					<div class="row forecast">
+						<div class="col-xl-12 col-l-12 col-m-12 col-s-12 col-xs-12 center" width="100%">
+							<h6>Next 6 Days</h6>
+							<hr>
+						</div>
+
+						<template v-for="(item, index) in forecast">
+							<div class="col-xl-2 col-l-2 col-m-2 col-s-2 col-xs-4 center">
+								<div class="forecast__box">
+									<p>{{ item.date }}</p>
+									<img v-bind:src="'./img/' + item.condition.icon" alt="">
+									<div v-if="celsius"><p>{{ item.maxtemp_c }}</p></div>
+									<div v-else><p>{{ item.maxtemp_f }}</p></div>
+								</div>
+							</div>
+						</template>
+					</div>
+
+				</div>
+
+				<img class="settings-icon" src="./img/settings.svg" alt="" v-on:click="config('config')">
+
+			</div>
+
+		</div>
+
+		<div class="aside" id="aside-wrap">
+			
+			<div class="aside__content">
+
+				<div id="aside">
+
+					<div class="locations" v-if="!settings">
+						<template v-for="(item, index) in locales">
+							<div class="group" onmouseover="focusSelect(this, true)" onmouseout="focusSelect(this, false)">
+								<div class="aside__content--placeholder row">
+									<div class="col-xl-2 col-l-2 col-m-2 col-s-2 col-xs-2 center" v-on:click="selectLocale('select')">
+										<img v-bind:src="'./img/' + item.icon" alt="" v-bind:data="item.locale">
+									</div>
+									<div class="col-xl-8 col-l-8 col-m-8 col-s-8 col-xs-8 center" v-on:click="selectLocale('select')">
+										<h4 style="padding: 20px" v-bind:data="item.locale">{{ item.locale }}</h4>
+									</div>
+									<div class="col-xl-2 col-l-2 col-m-2 col-s-2 col-xs-2 center">
+										<img src="./img/delete.svg" alt="" v-bind:data="item.locale" v-on:click="removeLocale('remove')" v-show="locales.length > 1">
+									</div>
+								</div>
+							</div>
+						</template>
+
+						<!-- add location -->
+						<div class="add">
+							<div class="aside__content--placeholder add__bar row">
+								<div class="col-xl-2 col-l-2 col-m-2 col-s-2 col-xs-2 center" v-on:click="addLocale('add')">
+									<img src="./img/add.svg" alt="">
+								</div>
+								<div class="col-xl-8 col-l-8 col-m-8 col-s-8 col-xs-8 center">
+									<input placeholder="Enter a region" value='' ref="addInput" v-on:keyup.13="addLocale('add')" v-on:click="errormsg = '', error = false">
+								</div>
+								<div class="col-xl-2 col-l-2 col-m-2 col-s-2 col-xs-2 center" v-on:click="cancel('cancel')">
+									<img src="./img/delete.svg" alt="">
+								</div>
+							</div>
+							<!-- error -->
+							<div class="error row" v-if="error">
+								<div class="col-auto center">
+									<p>{{ errormsg }}</p>
+								</div>					
+							</div>
+						</div>
+					
+						<div class="btn-add row" v-on:click="addActivateAdd()">
+							<div class="col-auto center">
+								<p class="btn-add--title">ADD LOCATION</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="settings" v-if="settings">
+
+						<img class="settings-icon back" src="./img/back.svg" alt="" v-on:click="config('config')">
+
+						<div class="settings-titlebar row">
+							<div class="col-auto center">
+								<h2 class="settings-heading">Settings</h2>
+							</div>
+						</div>
+
+						<div class="settings-placeholder row">
+							<div class="col-xl-8 col-l-8 col-m-8 col-s-8 col-xs-8 center left">
+								<div v-if="celsius"><h4>Temperature: Celsius</h4></div>
+								<div v-else><h4>Temperature: Fahrenheit</h4></div>
+							</div>
+							<div class="col-xl-2 col-l-2 col-m-2 col-s-2 col-xs-2 center">
+								<img class="switch" v-bind:class="{ onoff: celsius }" src="./img/toggle.svg" alt="" v-on:click="updateCelsius()">
+							</div>
+						</div>
+
+						<div class="settings-placeholder row">
+							<div class="col-xl-8 col-l-8 col-m-8 col-s-8 col-xs-8 center left">
+								<div v-if="metric"><h4>Unit Measure: Metric</h4></div>
+								<div v-else><h4>Unit Measure: Imperial</h4></div>
+							</div>
+							<div class="col-xl-2 col-l-2 col-m-2 col-s-2 col-xs-2 center">
+								<img class="switch" v-bind:class="{ onoff: metric }" src="./img/toggle.svg" alt="" v-on:click="updateMetric()">
+							</div>
+						</div>
+
+						<div class="settings-infobar row">
+							<div class="col-auto center left">
+								<p class="settings-text">This project is a work in progress. QR code links to https://weather-app-a.firebaseapp.com.</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-auto center">
+								<img class="qrcode" src="./img/link.svg" alt="">
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-auto center">
+								<h2 class="settings-info--heading"></h2>
+								<p class="settings-info--version"></p>
+								<p class="settings-info--dev"></p><br>
+							</div>
+						</div>
+
+						<div class="settings-infobar row">
+							<div class="col-auto center left">
+								<p class="settings-text">Reset and initialize application browser's local storage data.</p>
+							</div>
+						</div>
+
+						<div class="settings-placeholder row" style="padding: 10px 0" v-on:click="resetStorage('reset')" onmouseover="focusSelect(this, true)" onmouseout="focusSelect(this, false)">
+							<div class="col-auto center">
+								<h4 class="settings-resetbar">Reset</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+  <script src="./vue.js"></script>
+  <script src="./app.min.js"></script>
+  <!-- <script src="./js/app-vue.js"></script> -->
+</body>
+</html>
