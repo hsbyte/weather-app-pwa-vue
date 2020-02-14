@@ -1,4 +1,4 @@
-# The Weather App
+# The Weather App (Deprecated)
 ![](https://img.shields.io/badge/version-1.1.0-red.svg)
 
 >A weather application project using Javascript with Vue.js framework.
